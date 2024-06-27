@@ -1,4 +1,7 @@
+import styles from './App.module.css';
 import { Header } from './components/Header';
+import { Sidebar } from './components/Sidebar';
+
 import './global.css';
 
 export function App() {
@@ -6,7 +9,10 @@ export function App() {
     <div>
       <Header />
 
-      <div className="wrapper" />
+      <div className={styles.wrapper}>
+        <Sidebar />
+        <main>gswbduw</main>
+      </div>
     </div>
   );
 }
